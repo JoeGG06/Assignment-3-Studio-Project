@@ -1,0 +1,228 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Finger Paint', sans-serif;
+    background-color: #f0f0f0; 
+    color: #000000; 
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden; 
+}
+
+p {
+    padding-top: 10px;
+}
+
+.header {
+    height: 90vh;
+    background-image: url(/img/Front\ Instert-12in\ Insert\ 12x12in\,\ 2pp\ -\ 12-INS-2P\ —\ CLIENT\ R122923_1\ \(1\).jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+.header h1 {
+    font-size: 160px;
+    text-align: center;
+    padding-top: 40vh;
+    margin-top: 0;
+    text-shadow: white;
+    transition: .5s all ease;
+    font-family: 'Handjet';
+    letter-spacing: 8px;
+    color: rgb(255, 255, 255);
+}
+
+.nav {
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.nav ol li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    display: inline-block;
+    margin: 20px 0 0 15px;
+}
+
+.nav ol li a {
+    color: white;
+    font-family: 'Finger Paint', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+.nav ol li a:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                0 0 20px rgba(255, 255, 255, 0.6), 
+                0 0 30px rgba(255, 255, 255, 0.4); 
+    transform: scale(1.1);
+}
+
+.main {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.about-us h3 {
+    font-size: 2.5em;
+    color: #000;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+                 0 0 10px rgba(255, 255, 255, 0.6),
+                 0 0 20px rgba(255, 255, 255, 0.4);
+    transition: text-shadow 0.3s ease;
+}
+
+.about-us h3:hover {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 
+                 0 0 25px rgba(0, 0, 0, 0.6), 
+                 0 0 35px rgba(0, 0, 0, 0.4);
+}
+
+.merch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Merch Item */
+.merch-item {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.merch-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.merch-item h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.merch-item h4 {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.merch-container h2 {
+    font-size: 2.5em;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.my-button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Finger Paint', sans-serif;
+    font-size: 1.2em;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                0 0 20px rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.my-button:hover {
+    background-color: #333;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1), 
+                0 0 30px rgba(255, 255, 255, 0.9), 
+                0 0 40px rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+.my-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+
+.footer {
+    background: #000000;
+    padding: 30px 0;
+    font-family: 'Play', 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+.footer img {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    filter: brightness(0) invert(1); 
+}
+
+.footer img:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                0 0 20px rgba(255, 255, 255, 0.6), 
+                0 0 30px rgba(255, 255, 255, 0.4); 
+    transform: scale(1.2);
+}
+
+.footer a:hover img {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1), 
+                0 0 25px rgba(255, 255, 255, 0.8);
+}
+
+.button-container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+}
